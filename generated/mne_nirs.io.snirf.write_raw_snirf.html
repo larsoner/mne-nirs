@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Computation times &#8212; MNE-NIRS 0.0.1 dev documentation</title>
+    <title>mne_nirs.io.snirf.write_raw_snirf &#8212; MNE-NIRS 0.0.1 dev documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/bootstrap_divs.css" />
@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="index.html">Examples</a></li>
+                <li><a href="../auto_examples/index.html">Examples</a></li>
                 <li><a href="../api.html">API</a></li>
                 <li><a href="https://github.com/mne-tools/mne-nirs">GitHub</a></li>
             
@@ -72,7 +72,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Computation times</a></li>
+<li><a class="reference internal" href="#">mne_nirs.io.snirf.write_raw_snirf</a><ul>
+<li><a class="reference internal" href="#examples-using-mne-nirs-io-snirf-write-raw-snirf">Examples using <code class="docutils literal notranslate"><span class="pre">mne_nirs.io.snirf.write_raw_snirf</span></code></a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -104,34 +107,27 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="section" id="computation-times">
-<span id="sphx-glr-auto-examples-sg-execution-times"></span><h1>Computation times<a class="headerlink" href="#computation-times" title="Permalink to this headline">¶</a></h1>
-<p><strong>01:13.979</strong> total execution time for <strong>auto_examples</strong> files:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 82%" />
-<col style="width: 10%" />
-<col style="width: 7%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="plot_10_hrf.html#sphx-glr-auto-examples-plot-10-hrf-py"><span class="std std-ref">GLM Analysis (Measured Data)</span></a> (<code class="docutils literal notranslate"><span class="pre">plot_10_hrf.py</span></code>)</p></td>
-<td><p>00:39.728</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="plot_30_frequency.html#sphx-glr-auto-examples-plot-30-frequency-py"><span class="std std-ref">Frequency and Filter Commentary</span></a> (<code class="docutils literal notranslate"><span class="pre">plot_30_frequency.py</span></code>)</p></td>
-<td><p>00:27.974</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="plot_11_hrf_simulation.html#sphx-glr-auto-examples-plot-11-hrf-simulation-py"><span class="std std-ref">GLM Analysis (Simulated Data)</span></a> (<code class="docutils literal notranslate"><span class="pre">plot_11_hrf_simulation.py</span></code>)</p></td>
-<td><p>00:03.519</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="plot_20_cui.html#sphx-glr-auto-examples-plot-20-cui-py"><span class="std std-ref">Signal enhancement techniques</span></a> (<code class="docutils literal notranslate"><span class="pre">plot_20_cui.py</span></code>)</p></td>
-<td><p>00:02.758</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-</tbody>
-</table>
+  <div class="section" id="mne-nirs-io-snirf-write-raw-snirf">
+<h1>mne_nirs.io.snirf.write_raw_snirf<a class="headerlink" href="#mne-nirs-io-snirf-write-raw-snirf" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="mne_nirs.io.snirf.write_raw_snirf">
+<code class="sig-prename descclassname">mne_nirs.io.snirf.</code><code class="sig-name descname">write_raw_snirf</code><span class="sig-paren">(</span><em class="sig-param">raw</em>, <em class="sig-param">fname</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mne_nirs/io/snirf/_snirf.html#write_raw_snirf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mne_nirs.io.snirf.write_raw_snirf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writer for continuous wave SNIRF data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>raw</strong><span class="classifier">instance of Raw</span></dt><dd><p>Data to write to file. Must contain only <cite>fnirs_cw_amplitude</cite> type.</p>
+</dd>
+<dt><strong>fname</strong><span class="classifier">str</span></dt><dd><p>Path to the SNIRF data file.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="examples-using-mne-nirs-io-snirf-write-raw-snirf">
+<span id="sphx-glr-backreferences-mne-nirs-io-snirf-write-raw-snirf"></span><h2>Examples using <code class="docutils literal notranslate"><span class="pre">mne_nirs.io.snirf.write_raw_snirf</span></code><a class="headerlink" href="#examples-using-mne-nirs-io-snirf-write-raw-snirf" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-clear"></div></div>
 </div>
 
 
